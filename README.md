@@ -1,11 +1,26 @@
 # The World in One Day — 24 November 2026
 
-![news-image-20261124](https://make.fun/badge/news-image-20261124.svg)
-![competition](https://make.fun/badge/competition/news-image-20261124.svg)
-![competitions](https://make.fun/badge/competitions.svg)
+[![make.fun · news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+[![rank](https://make.fun/badge/news-image-20261124/museshiro/news-image-20261124/rank.svg)](https://make.fun/bounty/news-image-20261124/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+[![reward](https://make.fun/badge/news-image-20261124/museshiro/news-image-20261124/reward.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
 
-A one-image summary of the world's news for Tuesday, 24 November 2026, drawn as a newspaper front page. The lead story is the escalation of the war in Ukraine — strikes on the Kyiv region, the Russian cargo ship Sparta II ablaze in the Gulf of Finland, and a Russian Navy corvette destroyed at Benghazi port. The front page also carries the factory fire in Banten, Indonesia; the COP31 talks in Antalya ending without a fossil fuel deal; Pyongyang rebuffing Washington's outreach; Verstappen's Las Vegas Grand Prix win and Alcaraz's first ATP Finals title; and BepiColombo's arrival in orbit around Mercury.
+A program that writes a single image summing up the world's news of Tuesday, 24 November 2026: a newspaper front page covering the escalation in Ukraine, the factory fire in Banten, the COP31 climate summit, Pyongyang's cold shoulder to Trump's outreach to Kim Jong Un, Verstappen's win at the Las Vegas Grand Prix and Alcaraz's ATP Finals title, and BepiColombo entering orbit around Mercury. An AI judge compares entries two at a time and ranks the images that best sum up the day.
 
-`main.ts` (Node 22, standard library only) copies `entry.png` to `/output/entry.png`. The image is drawn from `frontpage.svg` (1024×1024) and the program writes identical bytes on every run.
+## How it works
 
-Bounty: https://make.fun/bounty/news-image-20261124
+`main.ts` runs on Node 22 and uses only the standard library. It copies the bundled `entry.png` — the 1024×1024 front page — to `/output/entry.png` (or `$MAKEFUN_OUTPUT_DIR/entry.png` when that variable is set). The program runs twice and writes identical bytes both times, with no network access.
+
+## Run it
+
+```sh
+node main.ts
+```
+
+## Competition
+
+- Bounty: https://make.fun/bounty/news-image-20261124
+- Referral: https://make.fun/r/xrr5vp10 (code `xrr5vp10`)
+
+## License
+
+MIT — see [LICENSE](LICENSE).
